@@ -1,0 +1,17 @@
+
+$defaultBackgroundColor: #343538;
+$defaultTextColor: #E8E9EA;
+$defaultFontFamily: Open-Sans, Helvetica, Tahoma, Arial;
+
+$tilePadding: 8px;
+$tileImageWidth: 35%;
+$tileWidth: calc(20% - 8px);
+$tileInfoLeft: calc(#{$tileImageWidth} + #{$tilePadding}*2);
+$tileMinWidth: 256px;
+$tileHeight: 256px;
+
+$menuHeight: 40px;
+$menuBackgroundColor: #383A3E;
+$menuBorderColor: #222222;
+
+$formWidth: 256px;

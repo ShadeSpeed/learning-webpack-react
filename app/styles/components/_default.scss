@@ -1,0 +1,11 @@
+
+body {
+  background-color: $defaultBackgroundColor;
+  color: $defaultTextColor;
+  font-family: $defaultFontFamily;
+}
+
+a, a:active, a:visited {
+  color: $defaultTextColor;
+  text-decoration: none;
+}

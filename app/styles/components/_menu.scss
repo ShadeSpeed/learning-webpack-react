@@ -1,0 +1,21 @@
+
+.menu {
+  position:absolute;
+  display:inline-flex;
+  top: $headerHeight;
+  left:0px;
+  right:0px;
+  height: $menuHeight;
+  background-color: $menuBackgroundColor;
+  border-top: 1px solid rgba(0,0,0,0.3);
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+.menuButton {
+  display:block;
+  width:128px;
+  flex-grow: 1;
+  text-align:center;
+  line-height: $menuHeight;
+}
+

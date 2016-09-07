@@ -1,0 +1,32 @@
+
+#form {
+  position: absolute;
+  top: ($headerHeight + $menuHeight);
+  left:0px;
+  width:$formWidth;
+  bottom:0px;
+  background-color:#888888;
+  padding:8px;
+  box-sizing:border-box;
+}
+
+#form input, #form textarea {
+  background-color:#444444;
+  color:#FFFFFF;
+  border:none;
+  margin-bottom:8px;
+  padding:4px;
+  box-sizing:border-box;
+  width:100%;
+}
+
+#form textarea {
+  height:128px;
+}
+
+#form h2 {
+  color: #000;
+  text-align:center;
+  font-size: 18px;
+  margin-bottom:8px;
+}

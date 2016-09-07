@@ -1,0 +1,23 @@
+$headerHeight: 128px;
+$headerBackgroundColor: #27292C;
+$headerPadding: 16px;
+$headerFontSize: 32px;
+
+#header {
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  height:$headerHeight;
+  background-color: $headerBackgroundColor;
+}
+
+#header h1 {
+  position: absolute;
+  display: block;
+  top:16px;
+  left: 32px;
+  height: ($headerHeight - ($headerPadding*2));
+  line-height: ($headerHeight - ($headerPadding*2));
+  font-size: $headerFontSize;
+}

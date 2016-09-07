@@ -1,0 +1,52 @@
+
+#tilesContainer {
+  position: absolute;
+  top: ($headerHeight + $menuHeight);
+  left: $formWidth;
+  right:0px;
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tile {
+  position:relative;
+  display: block;
+  flex-grow: 1;
+  height: $tileHeight;
+  width: $tileWidth;
+  min-width: $tileMinWidth;
+  margin: 8px;
+  background-color:#999999;
+}
+
+.tile img {
+  position: absolute;
+  display: block;
+  top: $tilePadding;
+  left: $tilePadding;
+  bottom: $tilePadding;
+  width: $tileImageWidth;
+  background-color: #FFF;
+  border: 1px solid #000;
+}
+
+.info {
+  position: absolute;
+  display: block;
+  top: $tilePadding;
+  left: $tileInfoLeft;
+  right: $tilePadding;
+  bottom: $tilePadding;
+}
+
+.info h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.info p {
+  font-size: 16px;
+  color: #333333;
+}

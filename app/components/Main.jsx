@@ -1,7 +1,9 @@
 import React from 'react';
-import Header from './Header.jsx';
-
 import MainStore from '../stores/MainStore.js';
+import Header from './Header.jsx';
+import Menu from './Menu.jsx';
+import Form from './Form.jsx';
+import Tiles from './Tiles.jsx';
 
 export default class Main extends React.Component {
   constructor(props) {
@@ -9,11 +11,20 @@ export default class Main extends React.Component {
     this.state = MainStore.getState();
   }
 
+  componentDidMount(){
+    MainStore.listen((newState) => {
+      this.setState(newState);
+    })
+  }
+
   render() {
     return (
-      <Header title={ this.state.title } />
+      <div>
+        <Header title={ this.state.title } />
+        <Menu menuItems={ this.state.menuItems } />
+        <Form titles={ this.state.title } />
+        <Tiles tiles={this.state.tiles} />
+      </div>
     )
   }
 }
-
-// Main.propTypes = { title: React.PropTypes.string };

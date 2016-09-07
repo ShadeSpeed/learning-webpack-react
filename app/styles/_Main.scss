@@ -1,7 +1,9 @@
-* {
-  box-sizing: border-box;
-}
+@import 'components/reset';
+@import 'components/variables';
 
-body {
-  background: #eee;
-}
+@import 'components/default';
+
+@import 'components/header';
+@import 'components/menu';
+@import 'components/tiles';
+@import 'components/form';
